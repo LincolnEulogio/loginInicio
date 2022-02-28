@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Creamos root */
+
+:root {
+    /* Fuentes tipo de letra */
+    --letra-inter: 'Inter', sans-serif;
+    --letra-manrope: 'Manrope', sans-serif;
+
+    /* Color de Letra o fuentes */
+    --color-blanco: #ffffff;
+    --color-negro: #000;
+
+    /* Colores de Fondo */
+    --fondo-card: #e5e7e4;
+    --fondo-input: #fff;
+    --fondo-body: #2187af;
+    --fondo-boton: #ff1fc7;
+    --fondo-boton-hover: #ee1670;
+
+}
+
+html,
+body {
+   background-image: url("./img/fondo.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   height: 100vh;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.login__info {
+    padding: 20px 20px;
+    background: var(--fondo-card);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    width: 295px;
+    height: 380px;
+}
+
+.login__img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+}
+
+.login__form {
+    display: grid;
+}
+
+.login__title {
+    background-color: rgb(221, 218, 219);
+}
+
+.login__titulo {
+    font-family: var(--letra-manrope);
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--color-negro);
+    margin-bottom: 15px;
+}
+
+.form__input {
+    padding: 12px 12px;
+    background-color: var(--fondo-input);
+    border: none;
+    outline: none;
+    color: var(--color-negro);
+    margin-top: 15px;
+    font-family: var(--letra-manrope);
+    width: 100%;
+}
+
+.form__input--btn {
+    background-color: var(--fondo-boton);
+    color: var(--color-blanco);
+}
+
+.form__input--btn:hover {
+    background-color: var(--fondo-boton-hover);
+}
+
+.contra {
+    padding-top: 15px;
+}
+
+.login__contra {
+    text-decoration: none;
+    color: var(--color-negro);
+    font-family: var(--letra-inter);
+    font-size: 12px;
+}
+
+.usuario , .password{
+    position: relative;
+	width: 100%;
+}
+.svg-icon {
+    color: #191919;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 85%;
+	top: 65%;
+	transform: translateY(-50%);
+}
